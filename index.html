@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Page with login and Registration form</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="script.js" defer></script>
+</head>
+<body>
+    <header>
+        <nav class="navbar">
+            <a href="#" class="logo">
+                <img src="logo.png" height="70" width="70" alt="logo">
+                <h4>JS GROUP</h4>
+            </a>
+                <ul class="link">
+                    <li><a href="#">HOME</a></li>
+                    <li><a href="#">GALLERY</a></li>
+                    <li><a href="#">ABOUT</a></li>
+                    <li><a href="#">CONTACT</a></li>
+                </ul>
+                <button class="login-button">LOG IN</button>
+         
+        </nav>
+    </header>
+    <div class="blur-bg-overlay"></div>
+    <div class="form-popup">
+        <span class="close-button material-symbols-rounded">close</span>
+        <div class="form-box login">
+            <div class="form-details">
+                <h2> Welcome Back</h2>
+                <p> please log in using personal information to stay connected with us </p>
+            </div>
+            <div class="form-content">
+                <h2>LOGIN</h2>
+                <form action="#">
+                    <div class="input-field">
+                    <input type="text" required>
+                    <label>Email</label>
+                    </div>
+                    <div class="input-field">
+                        <input type="password" required>
+                        <label>Password</label>
+                    </div>
+                    <a href="#" class="forgot-password">Forgot Password</a>     
+                    <button type="Submit">LOG IN</button>
+                </form>
+                <div class="bottom-link">
+                    Don't have an account?
+                    <a href="#" id="signup-link">Sign up</a>
+                </div>   
+         </div>
+        </div>
+        <div class="form-box signup">
+            <div class="form-details">
+                <h2> Create account</h2>
+                <p> To become a part of our community, please sign up using a personal information </p>
+            </div>
+            <div class="form-content">
+                <h2>SIGN UP</h2>
+                <form action="#">
+                    <div class="input-field">
+                    <input type="text" required>
+                    <label>Enter your Email</label>
+                    </div>
+                    <div class="input-field">
+                        <input type="password" required>
+                        <label>Create Password</label>
+                    </div>
+                    <div class="policy text">
+                        <input type="checkbox" id="policy">
+                        <label for="policy">
+                            I Agree the 
+                            <a href="#">Terms & Conditions</a>
+                        </label>
+                    </div>   
+                    <button type="Submit">Sign Up</button>
+                </form>
+                <div class="bottom-link">
+                    Already have an account?
+                    <a href="#" id="login-link">Login</a>
+                </div>   
+         </div>
+        </div>  
+    </div>
+</body>
+</html>
